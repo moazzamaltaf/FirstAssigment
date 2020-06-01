@@ -28,7 +28,7 @@ jobs:
        node-version: '12'
 
     - name: Installing Surge
-      run: npm install --global surge 
+      run: npm install -g surge 
     - name: deploying suing surge
       run: surge ./ FirstAssigment.surge.sh --token {{$secrets.SURGE_TOKEN}}
      
